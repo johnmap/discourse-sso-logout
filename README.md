@@ -6,16 +6,18 @@ A no-good dirty, filthy hack that logs the user out if the hash #logout is detec
 It just deletes the relevant cookies, so it won't exhibit Discourse's super-hilarious and user-friendly behaviour of invalidating ALL their sessions, regardless of your `log out strict` setting, and it won't cause a redirect loop between your app's logout link.
 
 # installation
-Copy below code inside script tags to `</head>` part of theme settings. Adjust redirect URL to your app's homepage, or wherever you wanna go after logging out.
+Copy below code including script tags to `</head>` part of theme settings. Adjust redirect URL to your app's homepage, or wherever you wanna go after logging out.
 
 
-`    if(window.location.hash=='#logout'){
-        document.cookie = '_forum_session=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-        document.cookie = '_t=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-        document.location = 'https://www.mandawin.com/';
-    }
-
-`
+<pre>
+<script>
+        if(window.location.hash=='#logout'){
+                document.cookie = '_forum_session=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                document.cookie = '_t=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+                document.location = 'https://www.mandawin.com/';
+        }
+</script>
+</pre>
 
 ### optional
 Set Discourse's `logout redirect` setting to your app's logout URL, to sync logouts the other way.

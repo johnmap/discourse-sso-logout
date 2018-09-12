@@ -24,6 +24,8 @@ Copy below code including script tags to `</head>` part of theme settings. Adjus
 Set Discourse's `logout redirect` setting to your app's logout URL, to sync logouts the other way.
 
 ### Yes, you heard correctly
-If you logout from Discourse on that library computer, you're automatically logging out on your mobile, tablet, notebook, Palm Pilot, Nintendo 3DS and Sony PSP. Let that sink in for a second. 🤯
+If you logout from Discourse on that library computer, you're automatically logging out on your mobile, tablet, notebook, Palm Pilot, Nintendo 3DS and Sony PSP. Let that sink in for a second...
+
+![🤯](https://media.giphy.com/media/7yDthHaq2haXS/giphy.gif)
 
 Whatever, it's nearly midnight and I'm out.
